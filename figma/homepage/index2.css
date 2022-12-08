@@ -1,0 +1,51 @@
+:root {
+    --black: rgba(0,0,0,0);
+    --monza: rgba(228,6,19,1);
+    --white: rgba(255,255,255,1);
+
+    --font-size-m: 0px;
+    --font-size-l: 10px;
+    --font-size-xl: 15px;
+    --font-size-xxl: 17px;
+    --font-size-xxxl: 45px;
+    --font-size-xxxxl: 50px;
+
+    --font-family-inter: "Inter"
+}
+.inter-normal-white-45px{
+    color: var(--white);
+    font-family: var(--font-family-inter);
+    font-size: var( --font-size-xxxl);
+    font-weight: 400;
+    font-style: normal;
+}
+.inter-thin-white-9px{
+    color: var(--white);
+    font-family: var(--font-family-inter);
+    font-size: var( --font-size-m);
+    font-weight: 100;
+    font-style: normal;
+}
+.inter-bold-white-10px{
+    color: var(--white);
+    font-family: var(--font-family-inter);
+    font-size: var( --font-size-l);
+    font-weight: 700;
+    font-style: italic;
+}
+.inter-thin-white-9px-2{
+    color: var(--white);
+    font-family: var(--font-family-inter);
+    font-size: var( --font-size-m);
+    font-weight: 100;
+    font-style: italic;
+}
+.inter-black-white-9px{
+    color: var(--white);
+    font-family: var(--font-family-inter);
+    font-size: var( --font-size-m);
+    font-weight: 100;
+    font-style: normal;
+}
+
+
