@@ -1,0 +1,145 @@
+* {
+    font-family: Inter, sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    /* border: 2px solid yellow; */
+    background-color: rgb(15,20,18);
+    height: auto;
+    color: white;
+  }
+  
+  .hero {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    height: 100%;
+  }
+  
+  .left-section {
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-rows: 30% 70%;
+    text-align: center;
+    font-style: italic;
+  }
+  
+  .logo-section {
+    background-color: black;
+    /* border: 3px solid yellow; */
+    position: relative;
+    text-align: center;
+    padding: 4px 50%;
+    padding: 10px auto;
+    max-width: 100%;
+    margin-right: 15px;
+  }
+  
+  .logo-section h1 {
+    position: absolute;
+    color: red;
+    font-weight: 800;
+    font-size: 70px;
+    /* top: -20px; */
+    margin-top: 10px;
+    transform: translate(-50%, 0);
+  }
+  
+  .logo-section h5 {
+    position: absolute;
+    bottom: 50px;
+    transform: translate(-50%, 0);
+    font-size: 22px;
+  }
+  
+  .logo-section p {
+    position: absolute;
+    bottom: 10px;
+    transform: translate(-50%, 0);
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  .left-nav-section {
+    /* border: 3px solid purple; */
+  
+    padding: 40px 0;
+    font-weight: 800;
+    gap: 3px;
+    background-color:0F1412;
+  }
+  
+  /* Change the color of links on hover */
+  .left-nav-section a:hover {
+    color: red;
+    text-decoration: none;
+    gap:4px;
+  }
+  
+  /* Add a color to the active/current link */
+  .left-nav-section a.active { 
+    color: red;
+    text-decoration: none;
+    gap:4px
+  }
+  
+  .nav-list {
+    display: grid;
+    grid-template-rows: repeat(11, 5fr);
+    gap: 40px;
+  }
+  
+  li {
+    cursor: pointer;
+  }
+  
+  .nav-list .link-5 {
+    color: rgb(48,167,138);
+  }
+  
+  
+  
+  .right-section {
+    /* border: 2px solid purple; */
+    padding: 10px 0px;
+    width: 100%;
+    grid-template-rows: 20% 80%;
+    gap:1px;
+  }
+
+.shoes{
+  position: absolute;
+width: 468px;
+height: 430px;
+left: 150px;
+top: 2px;
+
+}
+.shein{
+  position: absolute;
+width: 272px;
+height: 430px;
+left: 620px;
+top: 2px;
+}
+.sweeter{
+  text-align: left;
+  position: absolute;
+width: 600px;
+height: 490px;
+left: 896px;
+top: 2px;
+}
+.books{
+position: absolute;
+width: 600px;
+height: 268px;
+left: 896px;
+top: 500px;}
+.food{
+  position: absolute;
+  width: 741px;
+  height: 338px;
+  left: 150px;
+  top: 437px;}
