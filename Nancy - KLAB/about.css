@@ -2,6 +2,7 @@
     font-family: Inter, sans-serif;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
   }
   
   body {
@@ -14,7 +15,7 @@
   .hero {
     display: grid;
     grid-template-columns: 10% 90%;
-    height: 100%;
+    height: 90%;
   }
   
   .left-section {
@@ -34,31 +35,33 @@
     padding: 10px auto;
     max-width: 100%;
     margin-right: 15px;
+    height: 150px;
   }
   
   .logo-section h1 {
     position: absolute;
     color: red;
     font-weight: 800;
-    font-size: 100px;
-    /* top: -20px; */
-    margin: 0 auto;
+    font-size: 70px;
+    top: -20px;
+    margin: 20px auto;
     transform: translate(-50%, 0);
   }
   
   .logo-section h5 {
     position: absolute;
-    bottom: 95px;
+    bottom: 50px;
     transform: translate(-50%, 0);
     font-size: 22px;
   }
   
   .logo-section p {
     position: absolute;
-    bottom: 40px;
+    bottom: 10px;
     transform: translate(-50%, 0);
     font-size: 15px;
     font-weight: 600;
+    margin: 25px 0 0 0;
   }
   
   .left-nav-section {
@@ -66,19 +69,21 @@
   
     padding: 40px 0;
     font-weight: 800;
-    gap:4px
-    text-decoration: none;
+    gap: 3px; ;
+    background-color:0F1412;
   }
   
   /* Change the color of links on hover */
   .left-nav-section a:hover {
+    background-color: rgb(26, 17, 17);
     color: red;
     text-decoration: none;
     gap:4px;
   }
   
   /* Add a color to the active/current link */
-  .left-nav-section a.active { 
+  .left-nav-section a.active {
+    background-color: black;
     color: red;
     text-decoration: none;
     gap:4px
@@ -104,15 +109,14 @@
     /* border: 2px solid purple; */
     padding: 10px 0px;
     width: 100%;
-    grid-template-rows: 20% 80%;
-    gap:1px;
+    margin:10px;
   }
+  
   .right-nav-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    gap:1px;
   }
   
   .section-left {
@@ -127,7 +131,7 @@
   
   .section-right {
     display: flex;
-    align-items: center;
+    align-items: top;
     gap: 2px;
   }
   

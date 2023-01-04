@@ -51,67 +51,38 @@
           </div>
   </div>
       
-   
-
-
-
-    <div class="calc-container">
-      <form action="" class="calc-form">
-        <div class="calculator-screen">
-          <input type="text" name="calculator-screen" id="" value="0" />
-        </div>
-
-        <div class="buttons">
-          <div class="calc-buttons">
-            <input type="button" class="input-btn" value="1" />
-            <input type="button" class="input-btn" value="2" />
-            <input type="button" class="input-btn" value="3" />
-            <input type="button" class="input-btn" value="4" />
-            <input type="button" class="input-btn" value="5" />
-            <input type="button" class="input-btn" value="6" />
-            <input type="button" class="input-btn" value="7" />
-            <input type="button" class="input-btn" value="8" />
-            <input type="button" class="input-btn" value="9" />
-            <input type="button" class="input-btn" value="0" />
-            <input type="button" class="input-btn" id="decimal" value="." />
-            <input type="button" class="input-btn" id="power" value="**" />
-            <input type="button" id="square-root" value="√" />
-            <input type="button" class="input-btn" id="modulus" value="%" />
-          </div>
-
-          <div class="calc-operations">
-            <input type="button" id="backspace" value="DEL" />
-            <input type="button" class="input-btn" id="multiply" value="*" />
-            <input type="button" class="input-btn" id="divide" value="/" />
-            <input type="button" class="input-btn" id="add" value="+" />
-            <input type="button" class="input-btn" id="subtract" value="-" />
-          </div>
-        </div>
-
-        <div class="calc-cta">
-          <input type="button" id="clear" value="AC" />
-          <input type="button" id="equals" value="=" />
-        </div>
-      </form>
-
-      <div class="calc-history">
-        <section class="calc-history-heading">
-          <h2>Previous Calculations</h2>
-        </section>
-
-        <section class="history-list-section">
-          <ol class="history-list"></ol>
-
-          <input
-            type="button"
-            class="primary"
-            id="clear-history"
-            value="Clear"
-          />
-        </section>
+  <main class="main">
+    <div class="calc__container">
+      <div class="calc__display">
+        <input type="text" class="calc__input" id="" />
+      </div>
+      <div class="calc__keyboard">
+        <input value="C" type="button" class="calc__btn black" />
+        <input value="%" type="button" class="calc__btn black" />
+        <input value="Clr" type="button" class="calc__btn black" />
+        <input value="/" type="button" class="calc__btn black" />
+        <input value="7" type="button" class="calc__btn" />
+        <input value="8" type="button" class="calc__btn" />
+        <input value="9" type="button" class="calc__btn" />
+        <input value="*" type="button" class="calc__btn black" />
+        <input value="4" type="button" class="calc__btn" />
+        <input value="5" type="button" class="calc__btn" />
+        <input value="6" type="button" class="calc__btn" />
+        <input value="-" type="button" class="calc__btn black" />
+        <input value="1" type="button" class="calc__btn" />
+        <input value="2" type="button" class="calc__btn" />
+        <input value="3" type="button" class="calc__btn" />
+        <input value="+" type="button" class="calc__btn black" />
+        <input value="00" type="button" class="calc__btn" />
+        <input value="0" type="button" class="calc__btn" />
+        <input value="." type="button" class="calc__btn" />
+        <input value="=" type="button" class="calc__btn black" />
       </div>
     </div>
+  </main>
+  
+  <script src="calculator.js"></script>
+</body>
 
-    <script src="calculator.js"></script>
-  </body>
-</html>
+
+  

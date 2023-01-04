@@ -2,6 +2,7 @@
     font-family: Inter, sans-serif;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
   }
   
   body {
@@ -14,7 +15,7 @@
   .hero {
     display: grid;
     grid-template-columns: 10% 90%;
-    height: 100%;
+    height: 90%;
   }
   
   .left-section {
@@ -34,31 +35,33 @@
     padding: 10px auto;
     max-width: 100%;
     margin-right: 15px;
+    height: 150px;
   }
   
   .logo-section h1 {
     position: absolute;
     color: red;
     font-weight: 800;
-    font-size: 100px;
-    /* top: -20px; */
-    margin: 0 auto;
+    font-size: 70px;
+    top: -20px;
+    margin: 20px auto;
     transform: translate(-50%, 0);
   }
   
   .logo-section h5 {
     position: absolute;
-    bottom: 95px;
+    bottom: 50px;
     transform: translate(-50%, 0);
     font-size: 22px;
   }
   
   .logo-section p {
     position: absolute;
-    bottom: 40px;
+    bottom: 10px;
     transform: translate(-50%, 0);
     font-size: 15px;
     font-weight: 600;
+    margin: 25px 0 0 0;
   }
   
   .left-nav-section {
@@ -66,19 +69,21 @@
   
     padding: 40px 0;
     font-weight: 800;
-    gap:4px
-    text-decoration: none;
+    gap: 3px; ;
+    background-color:0F1412;
   }
   
   /* Change the color of links on hover */
   .left-nav-section a:hover {
+    background-color: rgb(26, 17, 17);
     color: red;
     text-decoration: none;
     gap:4px;
   }
   
   /* Add a color to the active/current link */
-  .left-nav-section a.active { 
+  .left-nav-section a.active {
+    background-color: black;
     color: red;
     text-decoration: none;
     gap:4px
@@ -104,15 +109,14 @@
     /* border: 2px solid purple; */
     padding: 10px 0px;
     width: 100%;
-    grid-template-rows: 20% 80%;
-    gap:1px;
+    margin:10px;
   }
+  
   .right-nav-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    gap:1px;
   }
   
   .section-left {
@@ -127,7 +131,7 @@
   
   .section-right {
     display: flex;
-    align-items: center;
+    align-items: top;
     gap: 2px;
   }
   
@@ -267,51 +271,89 @@ text-transform: uppercase;
 color: #40E9C0;
 
   }
-  .a1{
-    position: absolute;
-    width: 468px;
-    height: 530px;
-    left: 150px;
-    top: 410px;
+
+
+  .formm-container {
+    padding: 10px 0 0 50px;
+    max-width: 50%;
+
+    margin: 50px auto;
+
+    padding: 10px 40px;
+  }
+
+  form {
+    max-width: 40%;
+  }
+  
+  form input::placeholder{
+    color: white;
     font-style: italic;
+    opacity:2px;
+  }
+
+  form input:focus {
+    outline: none;
+    opacity:2px;
+  }
+
+  .name-email {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+
+    width: 100%;
+
+    padding-left: 35px;
+  }
+
+  .name-email input {
+    width: auto;
+    padding: 5px 20px;
+    height: 30px;
+    background-color: #323939;
+  }
+
+  .subject-message {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+    padding: 0 auto;
+
+    margin-bottom: 40px;
+  }
+
+  .subject-message input {
+    padding: 10px 20px;
+    width: 90%;
+    margin: 0 40px;
+font-style: italics;
+    background-color: #323939;
+  }
+
+  form a {
+    padding: 20px;
+    border: 2px solid #40E9C0;
+    margin: 10px 0 0 40px;
+
+    text-align: center;
+    text-decoration: none;
+    color: #40E9C0;
+  }
+  .cta-holder  {
+    font-size: 15px;
+    background-color: black;
+    color: rgb(63,222,183);
+    border-radius: 2px;
+    font-style: italic;
+    cursor: pointer;
+      margin: 50px auto;
+      padding: 20px;
+      height: auto;
+      left:600px;
+      top:1000px;
+    
+      display: flex;
+      justify-content: space-between;
     
   }
-  .a2{
-    position: absolute;
-    width: 468px;
-    height: 530px;
-    left: 350px;
-    top: 410px;
-    font-size: italic;
-  }
-  .a3{
-    position: absolute;
-    width: 968px;
-    height: 530px;
-    left: 150px;
-    top: 439px;
-     
-  }.a4{
-    position: absolute;
-    width: 277px;
-    height: 27px;
-    left: 150px;
-    top: 470px;
-    font-size: italic;
-    color:white;
-  
-  }
-  .a5{
-    position: absolute;
-  width: 277px;
-  height: 62px;
-  left: 350px;
-  top: 490px;
-  }
-  .form-heading{
-    width: 50px;
-    width: 50px;
-    font-style: italic;
-    background-color:323939 ;
-  }
-  

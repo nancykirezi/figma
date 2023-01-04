@@ -2,6 +2,7 @@
     font-family: Inter, sans-serif;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
   }
   
   body {
@@ -9,12 +10,13 @@
     background-color: rgb(15,20,18);
     height: auto;
     color: white;
+    width: 100%;
   }
   
   .hero {
     display: grid;
     grid-template-columns: 10% 90%;
-    height: 100%;
+    height: 90%;
   }
   
   .left-section {
@@ -34,6 +36,7 @@
     padding: 10px auto;
     max-width: 100%;
     margin-right: 15px;
+    height: 150px;
   }
   
   .logo-section h1 {
@@ -41,8 +44,8 @@
     color: red;
     font-weight: 800;
     font-size: 70px;
-    /* top: -20px; */
-    margin-top: 10px;
+    top: -20px;
+    margin: 20px auto;
     transform: translate(-50%, 0);
   }
   
@@ -59,6 +62,7 @@
     transform: translate(-50%, 0);
     font-size: 15px;
     font-weight: 600;
+    margin: 25px 0 0 0;
   }
   
   .left-nav-section {
@@ -66,19 +70,21 @@
   
     padding: 40px 0;
     font-weight: 800;
-    gap: 3px;
+    gap: 3px; ;
     background-color:0F1412;
   }
   
   /* Change the color of links on hover */
   .left-nav-section a:hover {
+    background-color: rgb(26, 17, 17);
     color: red;
     text-decoration: none;
     gap:4px;
   }
   
   /* Add a color to the active/current link */
-  .left-nav-section a.active { 
+  .left-nav-section a.active {
+    background-color: black;
     color: red;
     text-decoration: none;
     gap:4px
@@ -86,7 +92,7 @@
   
   .nav-list {
     display: grid;
-    grid-template-rows: repeat(11, 5fr);
+    grid-template-rows: repeat(5, 1fr);
     gap: 40px;
   }
   
@@ -103,43 +109,63 @@
   .right-section {
     /* border: 2px solid purple; */
     padding: 10px 0px;
-    width: 100%;
+    max-width: 100%;
     grid-template-rows: 20% 80%;
     gap:1px;
+    padding: 40px 20px;
+    height: auto;
   }
 
+  .right {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
 .shoes{
-  position: absolute;
-width: 468px;
-height: 430px;
-left: 150px;
+width: 375px;
+height: 400px;
+left: 200px;
 top: 2px;
 
 }
 .shein{
   position: absolute;
 width: 272px;
-height: 430px;
-left: 620px;
+height: 400px;
+/* left: 620px; */
 top: 2px;
+left: 519px;
 }
 .sweeter{
   text-align: left;
   position: absolute;
-width: 600px;
-height: 490px;
-left: 896px;
+width: 500px;
+height: 400px;
+left: 800px;
 top: 2px;
 }
-.books{
-position: absolute;
-width: 600px;
-height: 268px;
-left: 896px;
-top: 500px;}
+
 .food{
   position: absolute;
-  width: 741px;
+  width: 380px;
   height: 338px;
-  left: 150px;
-  top: 437px;}
+  left: 500px;
+  top: 418px;}
+  .calculators{
+    position: absolute;
+  width: 350px;
+  height: 338px;
+  left: 140px;
+  top: 418px;
+}
+  .todooo{
+    position: absolute;
+    width: 400px;
+    height: 350px;
+    left: 900px;
+    top: 410px;
+  }
+  
+  

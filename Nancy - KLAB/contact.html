@@ -16,12 +16,7 @@
 
             <div class="logo-section">
 
-                <a class="active" href="index.html"><h1 style="
-                    font-weight: 900;
-                font-size: 95px;
-                    text-transform: capitalize;
-                    color: red;
-                    ">
+                <a class="active" href="./index.html"><h1>
                     N
                 </h1></a>
 
@@ -37,10 +32,10 @@
 
             <div class="left-nav-section">
                 <ul class="nav-list">
-                    <a href="about.html "  style="text-decoration: none;color:white;"><li class="nav-link">About</li></a>
-                    <a href="skills.html" style="text-decoration: none;color:white;"><li class="nav-link">My Skills</li></a>
-                    <a href="work.html " style="text-decoration: none;color:white;"></a><li class="nav-link">Work</li></a>
-                    <a href="#contact.html "class="active" style="text-decoration: none;color:red;"></a><li class="nav-link">Contact</li></a>
+                    <a href="about.html "  none; style="text-decoration: none; color:white"><li class="nav-link">About</li></a>
+                    <a href="skills.html"  style="text-decoration: none;color:white"><li class="nav-link">My Skills</li></a>
+                    <a href="work.html "style="text-decoration: none;color:white"><li class="nav-link">Work</li></a>
+                    <a href="contact.html " style="text-decoration: none;color:white"><li class="nav-link">Contact</li></a>
                 </ul>
             </div>
     
@@ -51,30 +46,14 @@
             <div class="right-nav-section">
 
                 <section class="section-left">
-
-                </section>
-
-                <section class="section-right">
-                    <img src="./clouddd 1.png" alt="Cloud icon">
-                    <p id="p-1">
-                        sound
-                    </p>
-                    <p id="p-2">
-                        OFF
-                    </p>
-                </section>
-
-            </div>
-
-            <div class="right-hero-section">
-                <section class="section-left">
                     <p>
                     &lt;html&gt;
                     </p>
                     <p>
                    &lt; body&gt;
                     </p>
-                    <p>
+                    <p></p>
+                    <p >
                     &lth&gt;
                     </p>
                 </section>
@@ -100,29 +79,6 @@
                     <p class="p">
                         &lt;/p &gt;
                     </p>
-                    <form action="questionaire.php" method="post">
-                        <div class ="form-heading ">
-                        <div class = "a1">
-                            <label for="name">  </label><br>
-                            <input type="text" placeholder="Name" name="name" required>
-                        </div>
-                        <div class="a2">
-                            <label for="email"></label><br>
-                            <input type="text" placeholder="Email" name="email" required>
-                        </div>
-
-                        <div class="a3">
-                            <label for="subject"></label><br>
-                            <input type="text" placeholder="Subject" name="subject" required>
-                        </div>
-
-                        <div class="a4">
-                            <label for="message"></label><br>
-                            <input type="texr" placeholder="Message" name="message" required>
-                        </div>
-                    </div>
-                        <button class="a5">send comment/message ! </button>
-                </form>
                     <p class="p1">
                         &lt;/body&gt;
                     </p>
@@ -131,10 +87,51 @@
                     </p>
 
             </div>
+
+            <div class="form-container">
+
+            
+                <form name ="myform" action="/action_page.php" onsubmit="return validateForm()" method="post">
+
+                        <div class="name-email">
+        
+                            <div class = "a1">
+                                <label for="name">  </label><br>
+                                <input type="text" placeholder="Name" name="name" >
+                            </div>
+                            <div class="a2">
+                                <label for="email"></label><br>
+                                <input type="text" placeholder="Email" name="email" >
+                            </div>
+        
+                        </div>
+        
+                        <div class="subject-message">
+        
+                            <div class="a3">
+                                <label for="subject"></label><br>
+                                <input type="text" placeholder="SUBJECT" name="subject" required>
+                            </div>
+        
+                            <div class="a4">
+                                <label for="message"></label><br>
+                                <input type="text" placeholder="MESSAGE" name="message" required>
+        
+                                <!-- <textarea name="comment" id="" cols="30" rows="5"></textarea> -->
+                            </div>
+        
+                        </div>
+
+                        <button class="cta-holder" onclick="ValidateEmail(input),validateForm()"style="color:aqua">
+                            SEND COMMENT/MESSAGE !</button>
+            </form>
+        
+                </div>
     
         </div>
 
+
     </div>
-    
+    <script src="contact.js"></script>
 </body>
 </html>

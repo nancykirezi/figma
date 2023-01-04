@@ -2,6 +2,7 @@
   font-family: Inter, sans-serif;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -34,6 +35,7 @@ body {
   padding: 10px auto;
   max-width: 100%;
   margin-right: 15px;
+  height: 150px;
 }
 
 .logo-section h1 {
@@ -41,8 +43,8 @@ body {
   color: red;
   font-weight: 800;
   font-size: 70px;
-  /* top: -20px; */
-  margin: 10px;
+  top: -20px;
+  margin: 20px auto;
   transform: translate(-50%, 0);
 }
 
@@ -59,6 +61,7 @@ body {
   transform: translate(-50%, 0);
   font-size: 15px;
   font-weight: 600;
+  margin: 25px 0 0 0;
 }
 
 .left-nav-section {
@@ -166,8 +169,20 @@ li {
 
 .large-text h1 {
   font-size: 70px;
+  animation-name: example;
+  animation-duration: 2s;
+}
+.example:hover {
+  animation-name: bounce;
+  animation-timing-function: ease;
 }
 
+@keyframes example {
+  0%   {color: aqua;}
+  25% {color: aqua;}
+  50%  {color: aqua;}
+  100% {color: aqua;}
+}
 .text-position {
   /* border: 2px solid green; */
   padding: 10px 30px ;
