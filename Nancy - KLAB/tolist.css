@@ -1,0 +1,282 @@
+* {
+  font-family: Inter, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+body {
+  /* border: 2px solid yellow; */
+  background-color: rgb(15,20,18);
+  height: auto;
+  color: white;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  height: 90%;
+}
+
+.left-section {
+  /* border: 2px solid red; */
+  display: grid;
+  grid-template-rows: 30% 70%;
+  text-align: center;
+  font-style: italic;
+}
+
+.logo-section {
+  background-color: black;
+  /* border: 3px solid yellow; */
+  position: relative;
+  text-align: center;
+  padding: 4px 50%;
+  padding: 10px auto;
+  max-width: 100%;
+  margin-right: 15px;
+  height: 150px;
+}
+
+.logo-section h1 {
+  position: absolute;
+  color: red;
+  font-weight: 800;
+  font-size: 70px;
+  top: -20px;
+  margin: 20px auto;
+  transform: translate(-50%, 0);
+}
+
+.logo-section h5 {
+  position: absolute;
+  bottom: 50px;
+  transform: translate(-50%, 0);
+  font-size: 22px;
+}
+
+.logo-section p {
+  position: absolute;
+  bottom: 10px;
+  transform: translate(-50%, 0);
+  font-size: 15px;
+  font-weight: 600;
+  margin: 25px 0 0 0;
+}
+
+.left-nav-section {
+  /* border: 3px solid purple; */
+
+  padding: 40px 0;
+  font-weight: 800;
+  gap: 3px; ;
+  background-color:0F1412;
+}
+
+/* Change the color of links on hover */
+.left-nav-section a:hover {
+  background-color: rgb(26, 17, 17);
+  color: red;
+  text-decoration: none;
+  gap:4px;
+}
+
+/* Add a color to the active/current link */
+.left-nav-section a.active {
+  background-color: black;
+  color: red;
+  text-decoration: none;
+  gap:4px
+}
+
+.nav-list {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 40px;
+}
+
+li {
+  cursor: pointer;
+}
+
+.nav-list .link-5 {
+  color: rgb(48,167,138);
+}
+
+
+
+.right-section {
+  /* border: 2px solid purple; */
+  padding: 10px 0px;
+  width: 100%;
+  margin:10px;
+}
+  
+  button {
+    padding: 5px 18px;
+    max-height: 35px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .primary:hover {
+    box-sizing: border-box;
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  .secondary:hover {
+    box-sizing: border-box;
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  .primary {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    padding: 5px auto;
+    max-height: 100%;
+  }
+  
+  .secondary {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid wheat;
+    padding: 5px auto;
+    max-height: 100%;
+  }
+  
+  
+  /* <----- TODO CONTAINER -----> */
+  
+  .todo-container {
+
+    margin: 40px auto;
+    background-color:  black;
+  }
+  
+  .todo-container h1 {
+    text-align: center;
+  }
+  
+  .todo-container h1 span {
+    color: aqua
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+    /* border: 2px solid purple; */
+  }
+  
+  form input[type="text"] {
+    padding: 10px 10px;
+    border-radius: 5px;
+    min-width: 500px;
+  }
+  
+  form input[type="text"]::placeholder {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  form input[type="text"]:focus {
+    outline: none;
+    border: 1.5px solid whitesmoke;
+    border-radius: 5px;
+    padding: 10px 10px;
+    text-align: center;
+  }
+  
+  form input[type="text"]:focus::placeholder {
+    color: transparent;
+  }
+  
+  form input[type="button"] {
+    cursor: pointer;
+    font-weight: medium;
+    padding: 5px 10px;
+    background-color: aqua;
+    border: none;
+  }
+  
+  form input[type="button"]:hover {
+    background-color:aqua;
+    ;
+    color: whitesmoke;
+    transform: scale(1.05);
+  }
+  
+  .todo-list-container {
+
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+  
+    box-shadow: 2px 2px 8px 2px aqua;
+  }
+  
+  .clear-todo {
+    max-width: 80px;
+    margin: 0 auto;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 3px;
+  }
+  
+  .todo-item {
+    margin: 5px auto;
+  }
+  
+  .todo-cta {
+    display: flex;
+    gap: 5px;
+  
+  }
+  
+  .delete-btn {
+    padding: 2px;
+  }
+  
+  .edit-btn {
+    padding: 2px;
+  }
+  
+  
+  
+  #todo-list li {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px auto;
+    max-width: 90vh;
+    padding: 2px 10px;
+  
+    /* border: 2px solid black; */
+  }
+  
+  .todo-delete {
+    border-radius: 5px;
+  }
+  
+  .todo-delete:hover {
+    background-color: red;
+    color: white;
+    transform: scale(1.05);
+  }

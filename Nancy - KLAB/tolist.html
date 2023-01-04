@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="tolist.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+
+    <title>To-Do App</title>
+  </head>
+
+  <body onload="loadTodo()">
+
+    <div class="hero">
+
+      <div class="left-section">
+
+          <div class="logo-section">
+
+              <a class="active" href="#home"><h1>
+                  N
+              </h1></a>
+
+              <h5>
+                  NANCY
+              </h5>
+
+              <p>
+                  WEB DEVELOPER
+              </p>
+
+          </div>
+
+          <div class="left-nav-section">
+              <ul class="nav-list">
+                  <a href="about.html "  none; style="text-decoration: none; color:white"><li class="nav-link">About</li></a>
+                  <a href="skills.html"  style="text-decoration: none;color:white"><li class="nav-link">My Skills</li></a>
+                  <a href="work.html "style="text-decoration: none;color:white"><li class="nav-link">Work</li></a>
+                  <a href="contact.html " style="text-decoration: none;color:white"><li class="nav-link">Contact</li></a>
+              </ul>
+          </div>
+  </div>
+      
+   
+
+    <div class="todo-container">
+    <h1>To<span> do list!!</span></h1>
+      <form action="" method="POST">
+        <input
+          type="text"
+          id="todo-task"
+          name="todo"
+          placeholder=" make me know your today's plan here!!"
+        />
+        <input type="button" class="primary" id="add-btn" value=" add to list" />
+      </form>
+      <div class="todo-list-container">
+        <ol id="todo-list"></ol>
+
+        <input type="button" class="primary clear-todo" value="Clear All">
+      </div>
+    </div>
+
+    <script src="tolist.js"></script>
+
+
+  </body>
+</html>

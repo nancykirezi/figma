@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calculator.css" />
+    <title>Calculator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
+  </head>
+
+  <body onload="loadHistory()">
+
+    
+   
+<div class="hero">
+
+      <div class="left-section">
+
+          <div class="logo-section">
+
+              <a class="active" href="#home"><h1>
+                  N
+              </h1></a>
+
+              <h5>
+                  NANCY
+              </h5>
+
+              <p>
+                  WEB DEVELOPER
+              </p>
+
+          </div>
+
+          <div class="left-nav-section">
+              <ul class="nav-list">
+                  <a href="about.html "  none; style="text-decoration: none; color:white"><li class="nav-link">About</li></a>
+                  <a href="skills.html"  style="text-decoration: none;color:white"><li class="nav-link">My Skills</li></a>
+                  <a href="work.html "style="text-decoration: none;color:white"><li class="nav-link">Work</li></a>
+                  <a href="contact.html " style="text-decoration: none;color:white"><li class="nav-link">Contact</li></a>
+              </ul>
+          </div>
+  </div>
+      
+   
+
+
+
+    <div class="calc-container">
+      <form action="" class="calc-form">
+        <div class="calculator-screen">
+          <input type="text" name="calculator-screen" id="" value="0" />
+        </div>
+
+        <div class="buttons">
+          <div class="calc-buttons">
+            <input type="button" class="input-btn" value="1" />
+            <input type="button" class="input-btn" value="2" />
+            <input type="button" class="input-btn" value="3" />
+            <input type="button" class="input-btn" value="4" />
+            <input type="button" class="input-btn" value="5" />
+            <input type="button" class="input-btn" value="6" />
+            <input type="button" class="input-btn" value="7" />
+            <input type="button" class="input-btn" value="8" />
+            <input type="button" class="input-btn" value="9" />
+            <input type="button" class="input-btn" value="0" />
+            <input type="button" class="input-btn" id="decimal" value="." />
+            <input type="button" class="input-btn" id="power" value="**" />
+            <input type="button" id="square-root" value="√" />
+            <input type="button" class="input-btn" id="modulus" value="%" />
+          </div>
+
+          <div class="calc-operations">
+            <input type="button" id="backspace" value="DEL" />
+            <input type="button" class="input-btn" id="multiply" value="*" />
+            <input type="button" class="input-btn" id="divide" value="/" />
+            <input type="button" class="input-btn" id="add" value="+" />
+            <input type="button" class="input-btn" id="subtract" value="-" />
+          </div>
+        </div>
+
+        <div class="calc-cta">
+          <input type="button" id="clear" value="AC" />
+          <input type="button" id="equals" value="=" />
+        </div>
+      </form>
+
+      <div class="calc-history">
+        <section class="calc-history-heading">
+          <h2>Previous Calculations</h2>
+        </section>
+
+        <section class="history-list-section">
+          <ol class="history-list"></ol>
+
+          <input
+            type="button"
+            class="primary"
+            id="clear-history"
+            value="Clear"
+          />
+        </section>
+      </div>
+    </div>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
